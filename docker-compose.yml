@@ -1,0 +1,6 @@
+services:
+  haskell:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    command: stack repl
