@@ -1,6 +1,9 @@
 services:
   haskell:
-    build: .
+    image: haskell
+    container_name: haskell_container
+    stdin_open: true
+    tty: true
     volumes:
       - .:/usr/src/app
-    command: stack repl
+    working_dir: /usr/src/app
