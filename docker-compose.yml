@@ -1,15 +1,9 @@
 services:
   haskell:
+    image: haskell
+    container_name: haskell_container
+    stdin_open: true
     tty: true
-    build: .
     volumes:
-      - ./code:/code
-# services:
-#   haskell:
-#     image: haskell
-#     container_name: haskell_container
-#     stdin_open: true
-#     tty: true
-#     volumes:
-#       - .:/usr/src/app
-#     working_dir: /usr/src/app
+      - .:/usr/src/app
+    working_dir: /usr/src/app
