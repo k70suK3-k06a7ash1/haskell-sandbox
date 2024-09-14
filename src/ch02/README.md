@@ -14,6 +14,16 @@ ghci> add 1 4
 
 ```bash
 ghci
+ghci> :load myDrop.hs
 ghci> myDrop 2 "foobar"
 --> "obar"
+```
+
+## RoundToEven.hs
+
+```bash
+ghci
+ghci> :load RoundToEven.hs
+ghci> isOdd 2
+--> False
 ```
