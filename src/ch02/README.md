@@ -27,3 +27,12 @@ ghci> :load RoundToEven.hs
 ghci> isOdd 2
 --> False
 ```
+
+## composition of functions
+
+```bash
+ghci
+ghci> :load RoundToEven.hs
+ghci> isEven (add 2 2)
+--> True
+```
