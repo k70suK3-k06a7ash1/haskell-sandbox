@@ -1,6 +1,3 @@
-# haskell-sandbox
+# About this Repository
 
-```bash
-docker pull haskell
-docker run -it haskell
-```
+Read [this book](https://book.realworldhaskell.org/read/)
