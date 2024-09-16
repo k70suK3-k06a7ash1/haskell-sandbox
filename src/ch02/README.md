@@ -36,3 +36,11 @@ ghci> :load RoundToEven.hs
 ghci> isEven (add 2 2)
 --> True
 ```
+
+## check type
+
+```bash
+ghci
+ghci> :type not
+--> not :: Bool -> Bool
+```
