@@ -7,5 +7,7 @@ countLines filePath = do
 
 main :: IO ()
 main = do
-    lineCount <- countLines "USA.txt"
-    putStrLn $ "The file has " ++ show lineCount ++ " lines."
+    putStrLn "Enter the file name:"
+    fileName <- getLine
+    lineCount <- countLines fileName
+    putStrLn $ "The file " ++ fileName ++ " has " ++ show lineCount ++ " lines."
